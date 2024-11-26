@@ -1,12 +1,9 @@
 #!/bin/sh
 #
 ##SBATCH --job-name=QIIME2_single
-#SBATCH --time=72:00:00
-#SBATCH --ntasks=5
-#SBATCH --cpus-per-task=1
-#SBATCH --partition=lrgmem
-#SBATCH --mem-per-cpu=20G
+#SBATCH --time=24:00:00
 #SBATCH --nodes=1
+#SBATCH --partition=bigmem
 
 module load qiime2/2023.5.1
 

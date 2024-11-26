@@ -1,15 +1,11 @@
 #!/bin/sh
 #
-###SBATCH --job-name=QIIME2_single
-#SBATCH --time=72:00:00
-#SBATCH --ntasks=1
-#SBATCH --cpus-per-task=1
-#SBATCH --partition=lrgmem
-#SBATCH --mem-per-cpu=20G
+##SBATCH --job-name=QIIME2_single
+#SBATCH --time=24:00:00
 #SBATCH --nodes=1
+#SBATCH --partition=bigmem
 
-#import qiime environment
-module load qiime2/2018.8
+module load qiime2/2023.5.1
 
 #make sure to edit the merge_config.txt and put into the combined directory
 source ./qiime2_merge_sequence.config

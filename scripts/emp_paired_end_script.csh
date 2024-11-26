@@ -1,14 +1,11 @@
 #!/bin/sh
 #
 ##SBATCH --job-name=QIIME2_single
-#SBATCH --time=72:00:00
-#SBATCH --ntasks=5
-#SBATCH --cpus-per-task=1
-#SBATCH --partition=lrgmem
-#SBATCH --mem-per-cpu=20G
+#SBATCH --time=724:00:00
+#SBATCH --partition=bigmem
 #SBATCH --nodes=1
 
-module load qiime2/2018.8
+module load qiime2/2023.5.1
 
 #cp single_config.txt to this folder
 #edit variables according to analysis
